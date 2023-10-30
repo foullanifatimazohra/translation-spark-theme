@@ -3,16 +3,13 @@ import { useEffect } from "react";
 const Loader = () => {
   useEffect(() => {
     window.onload = () => {
-      window.onload = function () {
-        window.setTimeout(fadeout, 500);
-      };
-
-      function fadeout() {
-        document.querySelector(".preloader").style.opacity = "0";
-        document.querySelector(".preloader").style.display = "none";
-      }
+      const preloader = document.querySelector(".preloader");
+      window.setTimeout(() => {
+        preloader.remove();
+      }, [500]);
     };
   });
+
   return (
     <div class="preloader">
       <div class="preloader-inner">
