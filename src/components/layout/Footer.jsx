@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../../assets/images/logo/white-logo.svg";
 
 export const Footer = () => {
   return (
@@ -12,9 +14,9 @@ export const Footer = () => {
                 {/* Single Widget */}
                 <div className="single-footer f-about">
                   <div className="logo">
-                    <a href="index.html">
-                      <img src="assets/images/logo/white-logo.svg" alt="#" />
-                    </a>
+                    <Link to="/">
+                      <img src={logo} alt="#" />
+                    </Link>
                   </div>
                   <p>
                     Making the world a better place through constructing elegant
@@ -23,34 +25,34 @@ export const Footer = () => {
                   <h4 className="social-title">Follow Us On:</h4>
                   <ul className="social">
                     <li>
-                      <a href="javascript:void(0)">
+                      <Link to="#">
                         <i className="lni lni-facebook-filled" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">
+                      <Link to="#">
                         <i className="lni lni-instagram" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">
+                      <Link to="#">
                         <i className="lni lni-twitter-original" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">
+                      <Link to="#">
                         <i className="lni lni-linkedin-original" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">
+                      <Link to="#">
                         <i className="lni lni-pinterest" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">
+                      <Link to="#">
                         <i className="lni lni-youtube" />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -62,16 +64,16 @@ export const Footer = () => {
                   <h3>Solutions</h3>
                   <ul>
                     <li>
-                      <a href="javascript:void(0)">Marketing</a>
+                      <Link to="#">Marketing</Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Analytics</a>
+                      <Link to="#">Analytics</Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Commerce</a>
+                      <Link to="#">Commerce</Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Insights</a>
+                      <Link to="#">Insights</Link>
                     </li>
                   </ul>
                 </div>
@@ -83,16 +85,16 @@ export const Footer = () => {
                   <h3>Support</h3>
                   <ul>
                     <li>
-                      <a href="javascript:void(0)">Pricing</a>
+                      <Link to="#">Pricing</Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Documentation</a>
+                      <Link to="#">Documentation</Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Guides</a>
+                      <Link to="#">Guides</Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">API Status</a>
+                      <Link to="#">API Status</Link>
                     </li>
                   </ul>
                 </div>
@@ -142,9 +144,9 @@ export const Footer = () => {
               <div className="col-lg-6 col-md-6 col-12">
                 <p className="copyright-owner">
                   Designed and Developed by{" "}
-                  <a href="https://uideck.com/" rel="nofollow" target="_blank">
+                  <Link to="https://uideck.com/" rel="nofollow" target="_blank">
                     UIdeck
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>

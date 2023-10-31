@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
-import "./assets/css/main.css";
 import "./assets/css/animate.css";
-import "./assets/css/bootstrap.min.css";
 import "./assets/css/glightbox.min.css";
 import "./assets/css/LineIcons.3.0.css";
 import "./assets/css/tiny-slider.css";
+import "./assets/scss/main.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 

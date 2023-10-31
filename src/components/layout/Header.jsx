@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../../assets/images/logo/logo.svg";
+import logo from "../../assets/images/logo/white-logo.svg";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -32,76 +33,20 @@ export const Header = () => {
                 >
                   <ul id="nav" className="navbar-nav ms-auto">
                     <li className="nav-item">
-                      <a
-                        href="index.html"
+                      <Link
+                        to="/"
                         className="active"
                         aria-label="Toggle navigation"
                       >
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a href="about-us.html" aria-label="Toggle navigation">
+                      <Link to="about-us" aria-label="Toggle navigation">
                         About
-                      </a>
+                      </Link>
                     </li>
-                    <li className="nav-item">
-                      <a
-                        className="dd-menu collapsed"
-                        href="javascript:void(0)"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#submenu-1-1"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                      >
-                        Pages
-                      </a>
-                      <ul className="sub-menu collapse" id="submenu-1-1">
-                        <li className="nav-item">
-                          <a href="about-us.html">About Us</a>
-                        </li>
-                        <li className="nav-item">
-                          <a href="pricing.html">Our Pricing</a>
-                        </li>
-                        <li className="nav-item">
-                          <a href="signin.html">Sign In</a>
-                        </li>
-                        <li className="nav-item">
-                          <a href="signup.html">Sign Up</a>
-                        </li>
-                        <li className="nav-item">
-                          <a href="reset-password.html">Reset Password</a>
-                        </li>
-                        <li className="nav-item">
-                          <a href="mail-success.html">Mail Success</a>
-                        </li>
-                        <li className="nav-item">
-                          <a href="404.html">404 Error</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        className="dd-menu collapsed"
-                        href="javascript:void(0)"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#submenu-1-2"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                      >
-                        Blog
-                      </a>
-                      <ul className="sub-menu collapse" id="submenu-1-2">
-                        <li className="nav-item">
-                          <a href="blog-grid.html">Blog Grid</a>
-                        </li>
-                        <li className="nav-item">
-                          <a href="blog-single.html">Blog Single</a>
-                        </li>
-                      </ul>
-                    </li>
+
                     <li className="nav-item">
                       <a href="contact.html" aria-label="Toggle navigation">
                         Contact

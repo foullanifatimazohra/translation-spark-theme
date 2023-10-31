@@ -2,6 +2,7 @@ import { Header } from "./components/layout/Header";
 import { Footer } from "./components/layout/Footer";
 import Loader from "./components/ui/Loader";
 import { Routes, Route } from "react-router-dom";
+import { Home } from "./pages/home";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Loader />
       <Header />
       <Routes>
-        <Route path="/" element={<div>Welcome to home Page</div>} />
+        <Route path="/" element={<Home />} />
       </Routes>
       <Footer />
     </div>
