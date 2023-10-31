@@ -11,9 +11,9 @@ export const Header = () => {
             <div className="nav-inner">
               {/* Start Navbar */}
               <nav className="navbar navbar-expand-lg">
-                <a className="navbar-brand" href="index.html">
+                <Link className="navbar-brand" to="/">
                   <img src={logo} alt="Logo" />
-                </a>
+                </Link>
                 <button
                   className="navbar-toggler mobile-menu-btn"
                   type="button"
@@ -48,17 +48,17 @@ export const Header = () => {
                     </li>
 
                     <li className="nav-item">
-                      <a href="contact.html" aria-label="Toggle navigation">
+                      <Link to="contact" aria-label="Toggle navigation">
                         Contact
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>{" "}
                 {/* navbar collapse */}
                 <div className="button home-btn">
-                  <a href="signup.html" className="btn">
+                  <Link to="signup" className="btn">
                     Try for free
-                  </a>
+                  </Link>
                 </div>
               </nav>
               {/* End Navbar */}
