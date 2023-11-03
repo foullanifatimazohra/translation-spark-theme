@@ -1,7 +1,9 @@
 import React from "react";
 import team from "../../assets/images/home/team.jpg";
+import { useTranslation } from "react-i18next";
 
 export const Features = () => {
+  const { t } = useTranslation("home");
   return (
     <section className="freatures section">
       <div className="container">
@@ -14,52 +16,37 @@ export const Features = () => {
           <div className="col-lg-6 col-12">
             <div className="content">
               <h3 className="heading wow fadeInUp" data-wow-delay=".5s">
-                <span>Core Features</span>Designed &amp; built by the
-                <br /> latest code integration
+                <span>{t("features.subtitle")}</span>
+                {t("features.title")}
               </h3>
               {/* Start Single Feature */}
-              <div className="single-feature wow fadeInUp" data-wow-delay=".6s">
-                <div className="f-icon">
-                  <i className="lni lni-dashboard" />
-                </div>
-                <h4>Fast performance</h4>
-                <p>
-                  Get your blood tests delivered at home collect a sample from
-                  the news your blood tests
-                </p>
-              </div>
-              {/* End Single Feature */}
-              {/* Start Single Feature */}
-              <div className="single-feature wow fadeInUp" data-wow-delay=".7s">
-                <div className="f-icon">
-                  <i className="lni lni-pencil-alt" />
-                </div>
-                <h4>Prototyping</h4>
-                <p>
-                  Get your blood tests delivered at home collect a sample from
-                  the news your blood tests
-                </p>
-              </div>
-              {/* End Single Feature */}
-              {/* Start Single Feature */}
-              <div
-                className="single-feature wow fadeInUp"
-                data-wow-delay="0.8s"
-              >
-                <div className="f-icon">
-                  <i className="lni lni-vector" />
-                </div>
-                <h4>Vector Editing</h4>
-                <p>
-                  Get your blood tests delivered at home collect a sample from
-                  the news your blood tests
-                </p>
-              </div>
-              {/* End Single Feature */}
+
+              {t("features.cards", { returnObjects: true }).map(
+                (card, index) => (
+                  <FeatureCard
+                    title={card.title}
+                    paragraph={card.paragraph}
+                    icon={card.icon}
+                    key={index}
+                  />
+                )
+              )}
             </div>
           </div>
         </div>
       </div>
     </section>
+  );
+};
+
+const FeatureCard = ({ icon, title, paragraph }) => {
+  return (
+    <div className="single-feature wow fadeInUp" data-wow-delay=".6s">
+      <div className="f-icon">
+        <i className={icon} />
+      </div>
+      <h4>{title}</h4>
+      <p>{paragraph}</p>
+    </div>
   );
 };

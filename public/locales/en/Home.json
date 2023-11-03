@@ -10,14 +10,17 @@
     "title": "Designed & built by the latest code integration",
     "cards": [
       {
+        "icon": "lni lni-dashboard",
         "title": "Fast performance",
         "paragraph": "Get your blood tests delivered at home collect a sample from the news your blood tests"
       },
       {
+        "icon": "lni lni-pencil-alt",
         "title": "Prototyping",
         "paragraph": "Get your blood tests delivered at home collect a sample from the news your blood tests"
       },
       {
+        "icon": "lni lni-vector",
         "title": "Vector Editing",
         "paragraph": "Get your blood tests delivered at home collect a sample from the news your blood tests"
       }
