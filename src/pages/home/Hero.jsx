@@ -1,26 +1,22 @@
 import React from "react";
-import image from "../../assets/images/home/working-on-a-startup.jpg";
+import { useTranslation } from "react-i18next";
+//import image from "../../assets/images/home/working-on-a-startup.jpg";
 
 export const Hero = () => {
+  const { t } = useTranslation("home");
+
   return (
     <section className="hero-area">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-5 col-md-12 col-12">
             <div className="hero-content">
-              <h4>Creative App Landing Page</h4>
-              <h1>
-                Best app for your
-                <br />
-                modern lifestyle
-              </h1>
-              <p>
-                Tomfoolery are you taking the piss cor blimey guvnor <br />
-                do one bleeding young delinquent.
-              </p>
+              <h4>{t("main.subtitle")}</h4>
+              <h1>{t("main.title")}</h1>
+              <p>{t("main.paragraph")}</p>
               <div className="button">
                 <a href="about-us.html" className="btn ">
-                  Try for free
+                  {t("main.cta")}
                 </a>
               </div>
             </div>

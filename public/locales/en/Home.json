@@ -1,0 +1,26 @@
+{
+  "main": {
+    "subtitle": "Creative App Landing Page",
+    "title": "Best App For Your Modern Lifestyle",
+    "paragraph": "Tomfoolery are you taking the piss cor blimey guvnor do one bleeding young delinquent.",
+    "cta": "Try For Free"
+  },
+  "features": {
+    "subtitle": "Core Features",
+    "title": "Designed & built by the latest code integration",
+    "cards": [
+      {
+        "title": "Fast performance",
+        "paragraph": "Get your blood tests delivered at home collect a sample from the news your blood tests"
+      },
+      {
+        "title": "Prototyping",
+        "paragraph": "Get your blood tests delivered at home collect a sample from the news your blood tests"
+      },
+      {
+        "title": "Vector Editing",
+        "paragraph": "Get your blood tests delivered at home collect a sample from the news your blood tests"
+      }
+    ]
+  }
+}

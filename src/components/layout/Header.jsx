@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/logo/white-logo.svg";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const { i18n } = useTranslation();
+  const locales = [
+    { code: "en", title: "English" },
+    { code: "ar", title: "Arabic" },
+  ];
+
+  const handleChangeLanguage = (event) => {
+    setSelectedLanguage(event.target.value);
+    i18n.changeLanguage(event.target.value);
+  };
   return (
     <header className="header navbar-area">
       <div className="container">
@@ -52,14 +64,22 @@ export const Header = () => {
                         Contact
                       </Link>
                     </li>
+                    <div className="nav-item lang-select">
+                      <ul className="">
+                        <select
+                          value={selectedLanguage}
+                          onChange={handleChangeLanguage}
+                        >
+                          {locales.map((locale) => (
+                            <option key={locale.code} value={locale.code}>
+                              {locale.title}
+                            </option>
+                          ))}
+                        </select>
+                      </ul>
+                    </div>
                   </ul>
                 </div>{" "}
-                {/* navbar collapse */}
-                <div className="button home-btn">
-                  <Link to="signup" className="btn">
-                    Try for free
-                  </Link>
-                </div>
               </nav>
               {/* End Navbar */}
             </div>
