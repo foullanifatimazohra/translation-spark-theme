@@ -1,4 +1,5 @@
 import React from "react";
+import team from "../../assets/images/home/team.jpg";
 
 export const Features = () => {
   return (
@@ -7,7 +8,7 @@ export const Features = () => {
         <div className="row align-items-center">
           <div className="col-lg-6 col-12">
             <div className="image wow fadeInLeft" data-wow-delay=".3s">
-              <img src="https://via.placeholder.com/665x790" alt="#" />
+              <img src={team} alt="#" />
             </div>
           </div>
           <div className="col-lg-6 col-12">

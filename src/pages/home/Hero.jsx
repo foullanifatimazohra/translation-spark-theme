@@ -1,4 +1,5 @@
 import React from "react";
+import image from "../../assets/images/home/working-on-a-startup.jpg";
 
 export const Hero = () => {
   return (
@@ -28,7 +29,7 @@ export const Hero = () => {
             <div className="hero-image wow fadeInRight" data-wow-delay=".4s">
               <img
                 className="main-image"
-                src="https://via.placeholder.com/700x1000"
+                src="https://advanture.icu/helloimfortestonly/wp-content/uploads/sites/6/2023/02/mobile.png"
                 alt="#"
               />
             </div>

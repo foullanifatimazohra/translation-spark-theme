@@ -29,7 +29,10 @@ export const Team = () => {
             {/* Start Single Team */}
             <div className="single-team">
               <div className="team-image">
-                <img src="https://via.placeholder.com/400x400" alt="#" />
+                <img
+                  src="https://sparks.qodeinteractive.com/wp-content/uploads/2016/10/Home-1-Team-3.jpg"
+                  alt="#"
+                />
               </div>
               <div className="content">
                 <h4>
@@ -69,7 +72,10 @@ export const Team = () => {
             {/* Start Single Team */}
             <div className="single-team">
               <div className="team-image">
-                <img src="https://via.placeholder.com/400x400" alt="#" />
+                <img
+                  src="https://sparks.qodeinteractive.com/wp-content/uploads/2016/10/Home-1-Team-4.jpg"
+                  alt="#"
+                />
               </div>
               <div className="content">
                 <h4>
@@ -109,7 +115,10 @@ export const Team = () => {
             {/* Start Single Team */}
             <div className="single-team">
               <div className="team-image">
-                <img src="https://via.placeholder.com/400x400" alt="#" />
+                <img
+                  src="https://sparks.qodeinteractive.com/wp-content/uploads/2016/10/Home-1-Team-2.jpg"
+                  alt="#"
+                />
               </div>
               <div className="content">
                 <h4>
@@ -149,7 +158,10 @@ export const Team = () => {
             {/* Start Single Team */}
             <div className="single-team">
               <div className="team-image">
-                <img src="https://via.placeholder.com/400x400" alt="#" />
+                <img
+                  src="https://sparks.qodeinteractive.com/wp-content/uploads/2016/10/Home-1-Team-1.jpg"
+                  alt="#"
+                />
               </div>
               <div className="content">
                 <h4>
