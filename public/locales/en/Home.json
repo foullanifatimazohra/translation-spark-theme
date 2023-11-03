@@ -22,5 +22,80 @@
         "paragraph": "Get your blood tests delivered at home collect a sample from the news your blood tests"
       }
     ]
+  },
+  "services": {
+    "subtitle": "What We Offer",
+    "title": "Our Services",
+    "paragraph": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+    "cards": [
+      {
+        "title": "Brand Identity Design",
+        "paragraph": "Invest in Bitcoin on the regular or save with one of the highest interest rates on the market."
+      },
+      {
+        "title": "Digital Marketing",
+        "paragraph": "Invest in Bitcoin on the regular or save with one of the highest interest rates on the market."
+      },
+      {
+        "title": "Design and Development",
+        "paragraph": "Invest in Bitcoin on the regular or save with one of the highest interest rates on the market."
+      },
+      {
+        "title": "IT Consulting Service",
+        "paragraph": "Invest in Bitcoin on the regular or save with one of the highest interest rates on the market."
+      },
+      {
+        "title": "Cloud Computing",
+        "paragraph": "Invest in Bitcoin on the regular or save with one of the highest interest rates on the market."
+      },
+      {
+        "title": "Graphics Design",
+        "paragraph": "Invest in Bitcoin on the regular or save with one of the highest interest rates on the market."
+      }
+    ]
+  },
+  "pricing": {
+    "subtitle": "Pricing",
+    "title": "Pricing & Plans",
+    "paragraph": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+    "cards": [
+      {
+        "title": "Individual",
+        "paragraph": "Powerful & Awesome Elements",
+        "price": "19",
+        "time": "month",
+        "popular": "",
+        "credit": "No credit card required"
+      },
+      {
+        "title": "Exclusive",
+        "paragraph": "Powerful & Awesome Elements",
+        "price": "49",
+        "time": "month",
+        "popular": "Most Popular",
+        "credit": "No credit card required"
+      },
+      {
+        "title": "Premium",
+        "paragraph": "Powerful & Awesome Elements",
+        "price": "99",
+        "time": "month",
+        "popular": "",
+        "credit": "No credit card required"
+      }
+    ]
+  },
+  "video": {
+    "subtitle": "Create your own experience",
+    "title": "Watch Our Intro Video",
+    "paragraph": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form."
+  },
+  "team": {
+    "subtitle": "Expert Team",
+    "title": "Meet Our Team",
+    "paragraph": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form."
+  },
+  "cta": {
+    "title": "Download Our App & Start your free trial today."
   }
 }
