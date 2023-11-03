@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export const Services = () => {
+  const { t } = useTranslation("home");
   return (
     <div className="services section">
       <div className="container">
@@ -8,110 +10,41 @@ export const Services = () => {
           <div className="col-12">
             <div className="section-title">
               <h3 className="wow zoomIn" data-wow-delay=".2s">
-                What we offer
+                {t("services.subtitle")}
               </h3>
               <h2 className="wow fadeInUp" data-wow-delay=".4s">
-                Our Services
+                {t("services.title")}
               </h2>
               <p className="wow fadeInUp" data-wow-delay=".6s">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form.
+                {t("services.paragraph")}
               </p>
             </div>
           </div>
         </div>
         <div className="row">
-          <div
-            className="col-lg-4 col-md-6 col-12 wow fadeInUp"
-            data-wow-delay=".2s"
-          >
-            <div className="single-service">
-              <div className="main-icon">
-                <i className="lni lni-grid-alt" />
-              </div>
-              <h4 className="text-title">Brand Identity Design</h4>
-              <p>
-                Invest in Bitcoin on the regular or save with one of the highest
-                interest rates on the market.
-              </p>
-            </div>
-          </div>
-          <div
-            className="col-lg-4 col-md-6 col-12 wow fadeInUp"
-            data-wow-delay=".4s"
-          >
-            <div className="single-service">
-              <div className="main-icon">
-                <i className="lni lni-keyword-research" />
-              </div>
-              <h4 className="text-title">Digital Marketing</h4>
-              <p>
-                Invest in Bitcoin on the regular or save with one of the highest
-                interest rates on the market.
-              </p>
-            </div>
-          </div>
-          <div
-            className="col-lg-4 col-md-6 col-12 wow fadeInUp"
-            data-wow-delay=".6s"
-          >
-            <div className="single-service">
-              <div className="main-icon">
-                <i className="lni lni-vector" />
-              </div>
-              <h4 className="text-title">Design and Development</h4>
-              <p>
-                Invest in Bitcoin on the regular or save with one of the highest
-                interest rates on the market.
-              </p>
-            </div>
-          </div>
-          <div
-            className="col-lg-4 col-md-6 col-12 wow fadeInUp"
-            data-wow-delay=".2s"
-          >
-            <div className="single-service">
-              <div className="main-icon">
-                <i className="lni lni-book" />
-              </div>
-              <h4 className="text-title">IT Consulting Service</h4>
-              <p>
-                Invest in Bitcoin on the regular or save with one of the highest
-                interest rates on the market.
-              </p>
-            </div>
-          </div>
-          <div
-            className="col-lg-4 col-md-6 col-12 wow fadeInUp"
-            data-wow-delay=".4s"
-          >
-            <div className="single-service">
-              <div className="main-icon">
-                <i className="lni lni-cloud-network" />
-              </div>
-              <h4 className="text-title">Cloud Computing</h4>
-              <p>
-                Invest in Bitcoin on the regular or save with one of the highest
-                interest rates on the market.
-              </p>
-            </div>
-          </div>
-          <div
-            className="col-lg-4 col-md-6 col-12 wow fadeInUp"
-            data-wow-delay=".6s"
-          >
-            <div className="single-service">
-              <div className="main-icon">
-                <i className="lni lni-display-alt" />
-              </div>
-              <h4 className="text-title">Graphics Design</h4>
-              <p>
-                Invest in Bitcoin on the regular or save with one of the highest
-                interest rates on the market.
-              </p>
-            </div>
-          </div>
+          {t("services.cards", { returnObjects: true }).map((card, index) => (
+            <ServiceCard
+              title={card.title}
+              paragraph={card.paragraph}
+              icon={card.icon}
+              key={index}
+            />
+          ))}
         </div>
+      </div>
+    </div>
+  );
+};
+
+const ServiceCard = ({ icon, title, paragraph }) => {
+  return (
+    <div className="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
+      <div className="single-service">
+        <div className="main-icon">
+          <i className={icon} />
+        </div>
+        <h4 className="text-title">{title}</h4>
+        <p>{paragraph}</p>
       </div>
     </div>
   );
