@@ -52,3 +52,9 @@ html {
 .rtl-pricing-list li::before {
   right: 0 !important;
 }
+.rtl-nav-header {
+  gap: 20px;
+  position: absolute;
+  text-align: start;
+  left: 0;
+}

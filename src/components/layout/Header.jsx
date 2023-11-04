@@ -24,7 +24,10 @@ export const Header = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-12">
-            <div className="nav-inner">
+            <div
+              className="nav-inner"
+              style={i18n.language === "ar" ? { paddingTop: "20px" } : null}
+            >
               {/* Start Navbar */}
               <nav className="navbar navbar-expand-lg">
                 <Link className="navbar-brand" to="/">
@@ -47,7 +50,12 @@ export const Header = () => {
                   className="collapse navbar-collapse sub-menu-bar"
                   id="navbarSupportedContent"
                 >
-                  <ul id="nav" className="navbar-nav ms-auto">
+                  <ul
+                    id="nav"
+                    className={`navbar-nav ms-auto ${
+                      i18n.language === "ar" ? "rtl-nav-header" : ""
+                    }`}
+                  >
                     <li className="nav-item">
                       <Link
                         to="/"
