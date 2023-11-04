@@ -24,3 +24,31 @@ html {
   font-size: 15px;
   font-weight: 500;
 }
+
+.rtl-text {
+  text-align: right !important;
+}
+.rtl-float-left {
+  float: left !important;
+}
+.rtl-features-card {
+  padding-right: 100px !important;
+  padding-left: 0;
+}
+.rtl-f-icon {
+  right: 0 !important;
+}
+.rtl-popular {
+  right: auto !important;
+  left: 20px !important;
+}
+.rtl-pricing-table {
+  text-align: right !important;
+}
+.rtl-pricing-list li {
+  padding-left: 0px;
+  padding-right: 25px;
+}
+.rtl-pricing-list li::before {
+  right: 0 !important;
+}

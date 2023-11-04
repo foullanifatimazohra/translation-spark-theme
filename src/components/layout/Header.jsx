@@ -1,15 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/images/logo/white-logo.svg";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export const Header = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
   const { i18n } = useTranslation();
+  const [selectedLanguage, setSelectedLanguage] = useState("en");
+
   const locales = [
     { code: "en", title: "English" },
     { code: "ar", title: "Arabic" },
   ];
+  useEffect(() => {
+    setSelectedLanguage(i18n.language);
+  }, [i18n, i18n.language]);
 
   const handleChangeLanguage = (event) => {
     setSelectedLanguage(event.target.value);

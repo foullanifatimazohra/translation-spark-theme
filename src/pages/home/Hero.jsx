@@ -3,14 +3,18 @@ import { useTranslation } from "react-i18next";
 //import image from "../../assets/images/home/working-on-a-startup.jpg";
 
 export const Hero = () => {
-  const { t } = useTranslation("home");
+  const { t, i18n } = useTranslation("home");
 
   return (
     <section className="hero-area">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-5 col-md-12 col-12">
-            <div className="hero-content">
+            <div
+              className={`hero-content ${
+                i18n.language === "ar" ? "rtl-text" : ""
+              }`}
+            >
               <h4>{t("main.subtitle")}</h4>
               <h1>{t("main.title")}</h1>
               <p>{t("main.paragraph")}</p>

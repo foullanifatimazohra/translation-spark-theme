@@ -40,9 +40,15 @@ export const Features = () => {
 };
 
 const FeatureCard = ({ icon, title, paragraph }) => {
+  const { i18n } = useTranslation();
   return (
-    <div className="single-feature wow fadeInUp" data-wow-delay=".6s">
-      <div className="f-icon">
+    <div
+      className={`single-feature wow fadeInUp ${
+        i18n.language === "ar" ? "rtl-features-card" : ""
+      }`}
+      data-wow-delay=".6s"
+    >
+      <div className={`f-icon ${i18n.language === "ar" ? "rtl-f-icon" : ""}`}>
         <i className={icon} />
       </div>
       <h4>{title}</h4>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export const CallToAction = () => {
-  const { t } = useTranslation("home");
+  const { t, i18n } = useTranslation("home");
   return (
     <section className="call-action">
       <div className="container">
@@ -15,7 +15,11 @@ export const CallToAction = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-5 col-12">
-              <div className="button">
+              <div
+                className={`button ${
+                  i18n.language === "ar" ? "rtl-float-left" : ""
+                }`}
+              >
                 <Link to="#" className="btn">
                   <i className="lni lni-apple" /> App Store
                 </Link>

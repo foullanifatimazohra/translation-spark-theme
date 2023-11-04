@@ -55,11 +55,20 @@ const PricingCard = ({
   className,
   cta,
 }) => {
+  const { i18n } = useTranslation();
   return (
     <div className="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
       {/* Single Table */}
-      <div className={`single-table ${className}`}>
-        <span className="popular">{popular}</span>
+      <div
+        className={`single-table ${className} ${
+          i18n.language === "ar" ? "rtl-pricing-table" : ""
+        }`}
+      >
+        <span
+          className={`popular ${i18n.language === "ar" ? "rtl-popular" : ""}`}
+        >
+          {popular}
+        </span>
         {/* Table Head */}
         <div className="table-head">
           <h4 className="title">{title}</h4>
@@ -76,7 +85,11 @@ const PricingCard = ({
         {/* Start Table Content */}
         <div className="table-content">
           {/* Table List */}
-          <ul className="table-list">
+          <ul
+            className={`table-list ${
+              i18n.language === "ar" ? "rtl-pricing-list" : ""
+            }`}
+          >
             {list.map((item, index) => {
               return (
                 <li className={item.className} key={index}>
@@ -90,7 +103,12 @@ const PricingCard = ({
         {/* End Table Content */}
         <div className="button">
           <Link to="#" className="btn">
-            {cta} <i className="lni lni-arrow-right" />
+            {cta}{" "}
+            <i
+              className={`lni ${
+                i18n.language === "ar" ? "lni-arrow-left" : "lni-arrow-right"
+              }`}
+            />
           </Link>
         </div>
         <p className="no-card">{credit}</p>
