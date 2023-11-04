@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const Team = () => {
+  const { t } = useTranslation("home");
   return (
     <section className="team section">
       <div className="container">
@@ -9,14 +11,13 @@ export const Team = () => {
           <div className="col-12">
             <div className="section-title">
               <h3 className="wow zoomIn" data-wow-delay=".2s">
-                Expert Team
+                {t("team.subtitle")}
               </h3>
               <h2 className="wow fadeInUp" data-wow-delay=".4s">
-                Meet Our Team
+                {t("team.title")}
               </h2>
               <p className="wow fadeInUp" data-wow-delay=".6s">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form.
+                {t("team.paragraph")}{" "}
               </p>
             </div>
           </div>

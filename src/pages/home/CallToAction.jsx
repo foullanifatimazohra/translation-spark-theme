@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const CallToAction = () => {
+  const { t } = useTranslation("home");
   return (
     <section className="call-action">
       <div className="container">
@@ -9,10 +11,7 @@ export const CallToAction = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-7 col-12">
               <div className="text">
-                <h2>
-                  Download Our App &amp;
-                  <br /> Start your free trial today.
-                </h2>
+                <h2>{t("cta.title")}</h2>
               </div>
             </div>
             <div className="col-lg-6 col-md-5 col-12">

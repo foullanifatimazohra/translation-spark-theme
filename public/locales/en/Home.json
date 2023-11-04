@@ -74,7 +74,13 @@
         "price": "19",
         "time": "month",
         "popular": "",
-        "credit": "No credit card required"
+        "credit": "No credit card required",
+        "list": [
+          {
+            "icon": "",
+            "title": ""
+          }
+        ]
       },
       {
         "title": "Exclusive",
@@ -105,6 +111,6 @@
     "paragraph": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form."
   },
   "cta": {
-    "title": "Download Our App & Start your free trial today."
+    "title": "Download Our App &  Start your free trial today."
   }
 }

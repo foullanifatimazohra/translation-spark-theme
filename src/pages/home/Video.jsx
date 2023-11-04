@@ -1,8 +1,10 @@
 import React from "react";
 import shape1 from "../../assets/images/video/shape1.svg";
 import shape2 from "../../assets/images/video/shape2.svg";
+import { useTranslation } from "react-i18next";
 
 export const Video = () => {
+  const { t } = useTranslation("home");
   return (
     <section className="intro-video-area section">
       <div className="container">
@@ -14,15 +16,13 @@ export const Video = () => {
                 <img className="shape2" src={shape2} alt="#" />
                 <div className="section-title">
                   <span className="wow zoomIn" data-wow-delay=".2s">
-                    Create your own experience
+                    {t("video.subtitle")}
                   </span>
                   <h2 className="wow fadeInUp" data-wow-delay=".4s">
-                    Watch Our intro video
+                    {t("video.title")}
                   </h2>
                   <p className="wow fadeInUp" data-wow-delay=".6s">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form.
+                    {t("video.paragraph")}
                   </p>
                 </div>
                 <div className="intro-video-play">
