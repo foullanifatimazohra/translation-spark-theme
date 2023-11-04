@@ -77,10 +77,28 @@
         "credit": "No credit card required",
         "list": [
           {
-            "icon": "",
-            "title": ""
+            "className": "",
+            "title": "Commercial License"
+          },
+          {
+            "className": "",
+            "title": "100+ HTML UI Elements"
+          },
+          {
+            "className": "",
+            "title": "01 Domain Support"
+          },
+          {
+            "className": "disable",
+            "title": "6 Month Premium Support"
+          },
+          {
+            "className": "disable",
+            "title": "Lifetime Updates"
           }
-        ]
+        ],
+        "cta": "Start free trial",
+        "className": ""
       },
       {
         "title": "Exclusive",
@@ -88,7 +106,31 @@
         "price": "49",
         "time": "month",
         "popular": "Most Popular",
-        "credit": "No credit card required"
+        "credit": "No credit card required",
+        "list": [
+          {
+            "className": "",
+            "title": "Commercial License"
+          },
+          {
+            "className": "",
+            "title": "100+ HTML UI Elements"
+          },
+          {
+            "className": "",
+            "title": "01 Domain Support"
+          },
+          {
+            "className": "",
+            "title": "6 Month Premium Support"
+          },
+          {
+            "className": "disable",
+            "title": "Lifetime Updates"
+          }
+        ],
+        "cta": "Start free trial",
+        "className": "middle"
       },
       {
         "title": "Premium",
@@ -96,7 +138,31 @@
         "price": "99",
         "time": "month",
         "popular": "",
-        "credit": "No credit card required"
+        "credit": "No credit card required",
+        "list": [
+          {
+            "className": "",
+            "title": "Commercial License"
+          },
+          {
+            "className": "",
+            "title": "100+ HTML UI Elements"
+          },
+          {
+            "className": "",
+            "title": "01 Domain Support"
+          },
+          {
+            "className": "",
+            "title": "6 Month Premium Support"
+          },
+          {
+            "className": "",
+            "title": "Lifetime Updates"
+          }
+        ],
+        "cta": "Start free trial",
+        "className": ""
       }
     ]
   },
@@ -108,7 +174,29 @@
   "team": {
     "subtitle": "Expert Team",
     "title": "Meet Our Team",
-    "paragraph": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form."
+    "paragraph": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+    "list": [
+      {
+        "picture": "https://sparks.qodeinteractive.com/wp-content/uploads/2016/10/Home-1-Team-3.jpg",
+        "name": "Deco Milan",
+        "career": "Founder"
+      },
+      {
+        "picture": "https://sparks.qodeinteractive.com/wp-content/uploads/2016/10/Home-1-Team-4.jpg",
+        "name": "Liza Marko",
+        "career": "Developer"
+      },
+      {
+        "picture": "https://sparks.qodeinteractive.com/wp-content/uploads/2016/10/Home-1-Team-2.jpg",
+        "name": "John Smitho",
+        "career": "Designer"
+      },
+      {
+        "picture": "https://sparks.qodeinteractive.com/wp-content/uploads/2016/10/Home-1-Team-1.jpg",
+        "name": "Amion Doe",
+        "career": "Co-Founder"
+      }
+    ]
   },
   "cta": {
     "title": "Download Our App &  Start your free trial today."

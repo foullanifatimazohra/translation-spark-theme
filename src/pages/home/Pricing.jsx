@@ -32,6 +32,9 @@ export const Pricing = () => {
                 time={price.time}
                 popular={price.popular}
                 credit={price.credit}
+                list={price.list}
+                className={price.className}
+                cta={price.cta}
               />
             );
           })}
@@ -41,11 +44,21 @@ export const Pricing = () => {
   );
 };
 
-const PricingCard = ({ title, paragraph, price, time, popular, credit }) => {
+const PricingCard = ({
+  title,
+  paragraph,
+  price,
+  time,
+  popular,
+  credit,
+  list,
+  className,
+  cta,
+}) => {
   return (
     <div className="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
       {/* Single Table */}
-      <div className="single-table">
+      <div className={`single-table ${className}`}>
         <span className="popular">{popular}</span>
         {/* Table Head */}
         <div className="table-head">
@@ -64,18 +77,20 @@ const PricingCard = ({ title, paragraph, price, time, popular, credit }) => {
         <div className="table-content">
           {/* Table List */}
           <ul className="table-list">
-            <li>Commercial License</li>
-            <li>100+ HTML UI Elements</li>
-            <li>01 Domain Support</li>
-            <li className="disable">6 Month Premium Support</li>
-            <li className="disable">Lifetime Updates</li>
+            {list.map((item, index) => {
+              return (
+                <li className={item.className} key={index}>
+                  {item.title}
+                </li>
+              );
+            })}
           </ul>
           {/* End Table List */}
         </div>
         {/* End Table Content */}
         <div className="button">
           <Link to="#" className="btn">
-            Start free trial <i className="lni lni-arrow-right" />
+            {cta} <i className="lni lni-arrow-right" />
           </Link>
         </div>
         <p className="no-card">{credit}</p>

@@ -23,180 +23,58 @@ export const Team = () => {
           </div>
         </div>
         <div className="row">
-          <div
-            className="col-lg-3 col-md-6 col-12 wow fadeInUp"
-            data-wow-delay=".3s"
-          >
-            {/* Start Single Team */}
-            <div className="single-team">
-              <div className="team-image">
-                <img
-                  src="https://sparks.qodeinteractive.com/wp-content/uploads/2016/10/Home-1-Team-3.jpg"
-                  alt="#"
-                />
-              </div>
-              <div className="content">
-                <h4>
-                  Deco Milan
-                  <span>Founder</span>
-                </h4>
-                <ul className="social">
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-facebook-filled" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-instagram" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-twitter-original" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-linkedin-original" />
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* End Single Team */}
-          </div>
-          <div
-            className="col-lg-3 col-md-6 col-12 wow fadeInUp"
-            data-wow-delay=".5s"
-          >
-            {/* Start Single Team */}
-            <div className="single-team">
-              <div className="team-image">
-                <img
-                  src="https://sparks.qodeinteractive.com/wp-content/uploads/2016/10/Home-1-Team-4.jpg"
-                  alt="#"
-                />
-              </div>
-              <div className="content">
-                <h4>
-                  Liza Marko
-                  <span>Developer</span>
-                </h4>
-                <ul className="social">
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-facebook-filled" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-instagram" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-twitter-original" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-linkedin-original" />
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* End Single Team */}
-          </div>
-          <div
-            className="col-lg-3 col-md-6 col-12 wow fadeInUp"
-            data-wow-delay=".7s"
-          >
-            {/* Start Single Team */}
-            <div className="single-team">
-              <div className="team-image">
-                <img
-                  src="https://sparks.qodeinteractive.com/wp-content/uploads/2016/10/Home-1-Team-2.jpg"
-                  alt="#"
-                />
-              </div>
-              <div className="content">
-                <h4>
-                  John Smith
-                  <span>Designer</span>
-                </h4>
-                <ul className="social">
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-facebook-filled" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-instagram" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-twitter-original" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-linkedin-original" />
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* End Single Team */}
-          </div>
-          <div
-            className="col-lg-3 col-md-6 col-12 wow fadeInUp"
-            data-wow-delay=".9s"
-          >
-            {/* Start Single Team */}
-            <div className="single-team">
-              <div className="team-image">
-                <img
-                  src="https://sparks.qodeinteractive.com/wp-content/uploads/2016/10/Home-1-Team-1.jpg"
-                  alt="#"
-                />
-              </div>
-              <div className="content">
-                <h4>
-                  Amion Doe
-                  <span>Co-Founder</span>
-                </h4>
-                <ul className="social">
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-facebook-filled" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-instagram" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-twitter-original" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#">
-                      <i className="lni lni-linkedin-original" />
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* End Single Team */}
-          </div>
+          {t("team.list", { returnObjects: true }).map((item, index) => {
+            return (
+              <TeamCard
+                key={index}
+                name={item.name}
+                picture={item.picture}
+                career={item.career}
+              />
+            );
+          })}
         </div>
       </div>
     </section>
+  );
+};
+
+const TeamCard = ({ name, career, picture }) => {
+  return (
+    <div className="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".9s">
+      <div className="single-team">
+        <div className="team-image">
+          <img src={picture} alt="#" />
+        </div>
+        <div className="content">
+          <h4>
+            {name}
+            <span>{career}</span>
+          </h4>
+          <ul className="social">
+            <li>
+              <Link to="#">
+                <i className="lni lni-facebook-filled" />
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <i className="lni lni-instagram" />
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <i className="lni lni-twitter-original" />
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <i className="lni lni-linkedin-original" />
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 };
