@@ -24,20 +24,15 @@ html {
   font-size: 15px;
   font-weight: 500;
 }
-.lang-select-black select {
-  border: none;
-  color: black;
-  padding: 12px 16px;
-  background-color: transparent;
-  font-size: 15px;
-  font-weight: 500;
-}
 
 .rtl-text {
   text-align: right !important;
 }
 .rtl-float-left {
   float: left !important;
+}
+.rtl-float-left .btn-alt {
+  margin-right: 20px !important;
 }
 .rtl-features-card {
   padding-right: 100px !important;
@@ -64,7 +59,7 @@ html {
   gap: 20px;
   position: absolute;
   text-align: start;
-  left: 0;
+  right: 0;
 }
 
 .rtl-social li:first-child {
@@ -73,4 +68,18 @@ html {
 
 .rtl-social li:last-child {
   margin-right: 20px !important;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Your small device styles here */
+  .lang-select select {
+    color: black !important;
+    padding: 10px 16px;
+  }
+  .rtl-float-left {
+    float: none !important;
+  }
+  .navbar-collapse {
+    height: 50vh;
+  }
 }

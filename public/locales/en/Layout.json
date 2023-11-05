@@ -1,0 +1,24 @@
+{
+  "header": {
+    "pages": ["home", "about", "contact"],
+    "languages": ["English", "العربية"]
+  },
+  "footer": {
+    "paragraph": "Making the world a better place through constructing elegant hierarchies.",
+    "cta": "Follow Us On:",
+    "solution": {
+      "title": "Solution",
+      "pages": ["Marketing", "Analytics", "Commerce", "Insights"]
+    },
+    "support": {
+      "title": "Support",
+      "pages": ["Pricing", "Documentation", "Guides", "API Status"]
+    },
+    "subscribe": {
+      "title": "Subscribe",
+      "paragraph": "Subscribe to our newsletter for the latest updates"
+    },
+    "right": "© 2023 Spark - All Rights Reserved",
+    "developer": "Designed and Developed by UIdeck"
+  }
+}

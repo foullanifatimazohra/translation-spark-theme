@@ -4,20 +4,14 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export const Header = () => {
-  const [width, setWidth] = useState();
-
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation("layout");
   const [selectedLanguage, setSelectedLanguage] = useState("en");
 
   const locales = [
     { code: "en", title: "English" },
-    { code: "ar", title: "Arabic" },
+    { code: "ar", title: "العربية" },
   ];
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setWidth(window.innerWidth);
-    });
-  }, []);
+
   useEffect(() => {
     setSelectedLanguage(i18n.language);
   }, [i18n, i18n.language]);
@@ -60,9 +54,7 @@ export const Header = () => {
                   <ul
                     id="nav"
                     className={`navbar-nav ms-auto ${
-                      i18n.language === "ar" && width > 820
-                        ? "rtl-nav-header"
-                        : ""
+                      i18n.language === "ar" ? "rtl-nav-header" : ""
                     }`}
                   >
                     <li className="nav-item">
@@ -71,25 +63,21 @@ export const Header = () => {
                         className="active"
                         aria-label="Toggle navigation"
                       >
-                        Home
+                        {t("header.pages.0")}
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link to="about-us" aria-label="Toggle navigation">
-                        About
+                        {t("header.pages.1")}
                       </Link>
                     </li>
 
                     <li className="nav-item">
                       <Link to="contact" aria-label="Toggle navigation">
-                        Contact
+                        {t("header.pages.2")}
                       </Link>
                     </li>
-                    <div
-                      className={`nav-item ${
-                        width > 820 ? "lang-select" : "lang-select-black"
-                      }`}
-                    >
+                    <div className="nav-item lang-select">
                       <ul className="">
                         <select
                           value={selectedLanguage}

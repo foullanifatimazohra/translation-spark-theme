@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo/white-logo.svg";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t, i18n } = useTranslation("layout");
   return (
     <footer className="footer section">
       {/* Start Footer Top */}
@@ -18,13 +20,12 @@ export const Footer = () => {
                       <img src={logo} alt="#" />
                     </Link>
                   </div>
-                  <p>
-                    Making the world a better place through constructing elegant
-                    hierarchies.
-                  </p>
-                  <h4 className="social-title">Follow Us On:</h4>
+                  <p>{t("footer.paragraph")}</p>
+                  <h4 className="social-title">{t("footer.cta")}</h4>
                   <ul className="social">
-                    <li>
+                    <li
+                      style={i18n.language === "ar" ? { marginRight: 0 } : null}
+                    >
                       <Link to="#">
                         <i className="lni lni-facebook-filled" />
                       </Link>
@@ -49,7 +50,11 @@ export const Footer = () => {
                         <i className="lni lni-pinterest" />
                       </Link>
                     </li>
-                    <li>
+                    <li
+                      style={
+                        i18n.language === "ar" ? { marginRight: 20 } : null
+                      }
+                    >
                       <Link to="#">
                         <i className="lni lni-youtube" />
                       </Link>
@@ -61,19 +66,19 @@ export const Footer = () => {
               <div className="col-lg-2 col-md-6 col-12">
                 {/* Single Widget */}
                 <div className="single-footer f-link">
-                  <h3>Solutions</h3>
+                  <h3>{t("footer.solution.title")}</h3>
                   <ul>
                     <li>
-                      <Link to="#">Marketing</Link>
+                      <Link to="#">{t("footer.solution.pages.0")}</Link>
                     </li>
                     <li>
-                      <Link to="#">Analytics</Link>
+                      <Link to="#">{t("footer.solution.pages.1")}</Link>
                     </li>
                     <li>
-                      <Link to="#">Commerce</Link>
+                      <Link to="#">{t("footer.solution.pages.2")}</Link>
                     </li>
                     <li>
-                      <Link to="#">Insights</Link>
+                      <Link to="#">{t("footer.solution.pages.3")}</Link>
                     </li>
                   </ul>
                 </div>
@@ -82,19 +87,19 @@ export const Footer = () => {
               <div className="col-lg-2 col-md-6 col-12">
                 {/* Single Widget */}
                 <div className="single-footer f-link">
-                  <h3>Support</h3>
+                  <h3>{t("footer.support.title")}</h3>
                   <ul>
                     <li>
-                      <Link to="#">Pricing</Link>
+                      <Link to="#">{t("footer.support.pages.0")}</Link>
                     </li>
                     <li>
-                      <Link to="#">Documentation</Link>
+                      <Link to="#">{t("footer.support.pages.1")}</Link>
                     </li>
                     <li>
-                      <Link to="#">Guides</Link>
+                      <Link to="#">{t("footer.support.pages.2")}</Link>
                     </li>
                     <li>
-                      <Link to="#">API Status</Link>
+                      <Link to="#">{t("footer.support.pages.3")}s</Link>
                     </li>
                   </ul>
                 </div>
@@ -103,8 +108,8 @@ export const Footer = () => {
               <div className="col-lg-4 col-md-6 col-12">
                 {/* Single Widget */}
                 <div className="single-footer newsletter">
-                  <h3>Subscribe</h3>
-                  <p>Subscribe to our newsletter for the latest updates</p>
+                  <h3>{t("footer.subscribe.title")}</h3>
+                  <p>{t("footer.subscribe.paragraph")}</p>
                   <form
                     action="#"
                     method="get"
@@ -137,17 +142,10 @@ export const Footer = () => {
           <div className="inner-content">
             <div className="row">
               <div className="col-lg-6 col-md-6 col-12">
-                <p className="copyright-text">
-                  © 2023 Spark - All Rights Reserved
-                </p>
+                <p className="copyright-text">{t("footer.right")}</p>
               </div>
               <div className="col-lg-6 col-md-6 col-12">
-                <p className="copyright-owner">
-                  Designed and Developed by{" "}
-                  <Link to="https://uideck.com/" rel="nofollow" target="_blank">
-                    UIdeck
-                  </Link>
-                </p>
+                <p className="copyright-owner">{t("footer.developer")}</p>
               </div>
             </div>
           </div>
