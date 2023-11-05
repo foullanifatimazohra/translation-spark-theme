@@ -2,10 +2,10 @@ import React from "react";
 import team from "../../assets/images/home/team.jpg";
 import { useTranslation } from "react-i18next";
 
-export const Features = () => {
+export const Features = ({ bgWhite = false }) => {
   const { t } = useTranslation("home");
   return (
-    <section className="freatures section">
+    <section className={`freatures section ${bgWhite ? "bg-white" : ""}`}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 col-12">

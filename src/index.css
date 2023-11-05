@@ -59,7 +59,7 @@ html {
   gap: 20px;
   position: absolute;
   text-align: start;
-  right: 0;
+  left: 0;
 }
 
 .rtl-social li:first-child {
@@ -82,4 +82,11 @@ html {
   .navbar-collapse {
     height: 50vh;
   }
+  .rtl-nav-header {
+    right: 0;
+  }
+}
+
+.tns-controls {
+  display: none;
 }

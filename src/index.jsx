@@ -8,7 +8,8 @@ import "./assets/css/animate.css";
 import "./assets/css/main.css";
 import "./assets/css/glightbox.min.css";
 import "./assets/css/LineIcons.3.0.css";
-import "./assets/css/tiny-slider.css";
+import "tiny-slider/dist/tiny-slider.css";
+
 //import "./assets/scss/main.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -16,11 +17,9 @@ import "./i18n";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

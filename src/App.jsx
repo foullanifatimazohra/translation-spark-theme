@@ -4,6 +4,7 @@ import { Footer } from "./components/layout/Footer";
 import Loader from "./components/ui/Loader";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home";
+import { About } from "./pages/about";
 import { useTranslation } from "react-i18next";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<About />} />
       </Routes>
       <Footer />
     </div>
