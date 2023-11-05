@@ -40,6 +40,7 @@ export const Team = () => {
 };
 
 const TeamCard = ({ name, career, picture }) => {
+  const { i18n } = useTranslation();
   return (
     <div className="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".9s">
       <div className="single-team">
@@ -51,7 +52,9 @@ const TeamCard = ({ name, career, picture }) => {
             {name}
             <span>{career}</span>
           </h4>
-          <ul className="social">
+          <ul
+            className={`social ${i18n.language === "ar" ? "rtl-social" : ""}`}
+          >
             <li>
               <Link to="#">
                 <i className="lni lni-facebook-filled" />

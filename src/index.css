@@ -24,6 +24,14 @@ html {
   font-size: 15px;
   font-weight: 500;
 }
+.lang-select-black select {
+  border: none;
+  color: black;
+  padding: 12px 16px;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 500;
+}
 
 .rtl-text {
   text-align: right !important;
@@ -57,4 +65,12 @@ html {
   position: absolute;
   text-align: start;
   left: 0;
+}
+
+.rtl-social li:first-child {
+  margin-right: 0px !important;
+}
+
+.rtl-social li:last-child {
+  margin-right: 20px !important;
 }
