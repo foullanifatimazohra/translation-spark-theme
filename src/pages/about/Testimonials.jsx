@@ -1,8 +1,10 @@
 import React from "react";
 import TinySlider from "tiny-slider-react";
 import { TestimonialCard } from "./TestimonialCard";
+import { useTranslation } from "react-i18next";
 
 export const Testimonials = () => {
+  const { t } = useTranslation("about");
   const settings = {
     lazyload: true,
     nav: true,
@@ -23,23 +25,23 @@ export const Testimonials = () => {
           <div className="col-12">
             <div className="section-title">
               <h3 className="wow zoomIn" data-wow-delay=".2s">
-                Customer Reviews
+                {t("testimonials.subtitle")}
               </h3>
               <h2 className="wow fadeInUp" data-wow-delay=".4s">
-                Our Testimonials
+                {t("testimonials.title")}
               </h2>
               <p className="wow fadeInUp" data-wow-delay=".6s">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form.
+                {t("testimonials.paragraph")}
               </p>
             </div>
           </div>
         </div>
         <TinySlider settings={settings} className="row testimonial-slider">
-          <TestimonialCard key={0} />
-          <TestimonialCard key={1} />
-          <TestimonialCard key={2} />
-          <TestimonialCard key={3} />
+          {t("testimonials.cards", { returnObjects: true }).map(
+            (card, index) => {
+              return <TestimonialCard key={index} {...card} />;
+            }
+          )}
         </TinySlider>
       </div>
     </section>

@@ -1535,8 +1535,8 @@ ol {
     box-shadow: none;
     padding: 0;
     border: none;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .header .navbar-nav .nav-item .sub-menu .nav-item a {
     padding: 12px 12px;

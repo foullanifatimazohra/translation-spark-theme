@@ -57,7 +57,11 @@ export const Header = () => {
                       i18n.language === "ar" ? "rtl-nav-header" : ""
                     }`}
                   >
-                    <li className="nav-item">
+                    <li
+                      className={`nav-item ${
+                        i18n.language === "ar" ? "rtl-nav-item" : ""
+                      }`}
+                    >
                       <Link
                         to="/"
                         className="active"
@@ -66,13 +70,21 @@ export const Header = () => {
                         {t("header.pages.0")}
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    <li
+                      className={`nav-item ${
+                        i18n.language === "ar" ? "rtl-nav-item" : ""
+                      }`}
+                    >
                       <Link to="about-us" aria-label="Toggle navigation">
                         {t("header.pages.1")}
                       </Link>
                     </li>
 
-                    <li className="nav-item">
+                    <li
+                      className={`nav-item ${
+                        i18n.language === "ar" ? "rtl-nav-item" : ""
+                      }`}
+                    >
                       <Link to="contact" aria-label="Toggle navigation">
                         {t("header.pages.2")}
                       </Link>

@@ -56,7 +56,7 @@ html {
   right: 0 !important;
 }
 .rtl-nav-header {
-  gap: 20px;
+  gap: 40px;
   position: absolute;
   text-align: start;
   left: 0;
@@ -65,9 +65,15 @@ html {
 .rtl-social li:first-child {
   margin-right: 0px !important;
 }
+.rtl-nav-item {
+  margin-right: 0 !important;
+}
 
 .rtl-social li:last-child {
   margin-right: 20px !important;
+}
+.tns-visually-hidden {
+  display: none;
 }
 
 @media only screen and (max-width: 767px) {
@@ -83,6 +89,7 @@ html {
     height: 50vh;
   }
   .rtl-nav-header {
+    gap: 20px;
     right: 0;
   }
 }

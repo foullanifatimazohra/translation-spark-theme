@@ -1,0 +1,41 @@
+{
+  "title": "About Us",
+  "subtitle": "",
+  "testimonials": {
+    "subtitle": "Customer Reviews",
+    "title": "Our Testimonials",
+    "paragraph": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+    "cards": [
+      {
+        "name": "Jems Gilario",
+        "job": "Graphics Designer",
+        "comment": "A vast number of clients decide to create dedicated software is the online store. It is nothing but a website with a catalog of products and the possibility.",
+        "picture": ""
+      },
+      {
+        "name": "David Warner",
+        "job": "Web Developer",
+        "comment": "A vast number of clients decide to create dedicated software is the online store. It is nothing but a website with a catalog of products and the possibility.",
+        "picture": ""
+      },
+      {
+        "name": "Somalia D Silva",
+        "job": "Business Manager",
+        "comment": "A vast number of clients decide to create dedicated software is the online store. It is nothing but a website with a catalog of products and the possibility.",
+        "picture": ""
+      },
+      {
+        "name": "Jems Gilario",
+        "job": "Graphics Designer",
+        "comment": "A vast number of clients decide to create dedicated software is the online store. It is nothing but a website with a catalog of products and the possibility.",
+        "picture": ""
+      },
+      {
+        "name": "David Warner",
+        "job": "Web Developer",
+        "comment": "A vast number of clients decide to create dedicated software is the online store. It is nothing but a website with a catalog of products and the possibility.",
+        "picture": ""
+      }
+    ]
+  }
+}
