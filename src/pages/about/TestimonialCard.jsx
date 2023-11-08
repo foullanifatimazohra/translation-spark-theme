@@ -13,7 +13,7 @@ export const TestimonialCard = ({ comment, name, job, picture }) => {
             <p>“{comment}”</p>
           </div>
           <div className="author">
-            <img src="https://via.placeholder.com/100x100" alt="#" />
+            <img src={picture} alt="#" />
             <h4 className="name">
               {name}
               <span className="deg">{job}</span>
