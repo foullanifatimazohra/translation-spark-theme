@@ -4,6 +4,7 @@ import { Footer } from "./components/layout/Footer";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home";
 import { About } from "./pages/about";
+import { Contact } from "./pages/contact";
 import { useTranslation } from "react-i18next";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
