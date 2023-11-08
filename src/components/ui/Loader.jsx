@@ -4,18 +4,19 @@ const Loader = () => {
   useEffect(() => {
     window.onload = () => {
       const preloader = document.querySelector(".preloader");
-      window.setTimeout(() => {
+      setTimeout(() => {
         preloader.remove();
       }, [500]);
     };
-  });
+  }, []);
 
   return (
-    <div class="preloader">
-      <div class="preloader-inner">
-        <div class="preloader-icon">
-          <span></span>
-          <span></span>
+    <div classname="preloader">
+      <div classname="preloader-inner">
+        <div classname="preloader-icon">
+          <span>
+            <span></span>
+          </span>
         </div>
       </div>
     </div>

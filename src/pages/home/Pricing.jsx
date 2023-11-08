@@ -23,9 +23,10 @@ export const Pricing = () => {
           </div>
         </div>
         <div className="row">
-          {t("pricing.cards", { returnObjects: true }).map((price) => {
+          {t("pricing.cards", { returnObjects: true }).map((price, index) => {
             return (
               <PricingCard
+                key={index}
                 title={price.title}
                 paragraph={price.paragraph}
                 price={price.price}
