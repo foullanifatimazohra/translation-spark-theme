@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
@@ -9,6 +9,7 @@ import "./assets/css/main.css";
 import "./assets/css/glightbox.min.css";
 import "./assets/css/LineIcons.3.0.css";
 import "tiny-slider/dist/tiny-slider.css";
+import Loader from "./components/ui/Loader";
 
 //import "./assets/scss/main.css";
 import App from "./App";
@@ -18,7 +19,9 @@ import "./i18n";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <App />
+    <Suspense fallback={<Loader />}>
+      <App />
+    </Suspense>
   </BrowserRouter>
 );
 

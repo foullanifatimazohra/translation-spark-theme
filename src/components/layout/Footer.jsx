@@ -118,7 +118,7 @@ export const Footer = () => {
                   >
                     <input
                       name="EMAIL"
-                      placeholder="Email address"
+                      placeholder={t("footer.email")}
                       required="required"
                       type="email"
                     />

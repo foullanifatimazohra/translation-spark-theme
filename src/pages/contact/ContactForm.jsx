@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ContactForm = () => {
+export const ContactForm = ({ fields, cta }) => {
   return (
     <form className="form" method="post" action="assets/mail/mail.php">
       <div className="row">
@@ -9,7 +9,7 @@ export const ContactForm = () => {
             <input
               name="name"
               type="text"
-              placeholder="Name*"
+              placeholder={fields[0]}
               required="required"
             />
           </div>
@@ -19,7 +19,7 @@ export const ContactForm = () => {
             <input
               name="email"
               type="email"
-              placeholder="Email*"
+              placeholder={fields[1]}
               required="required"
             />
           </div>
@@ -29,7 +29,7 @@ export const ContactForm = () => {
             <input
               name="subject"
               type="text"
-              placeholder="Subject*"
+              placeholder={fields[2]}
               required="required"
             />
           </div>
@@ -39,7 +39,7 @@ export const ContactForm = () => {
             <input
               name="phone"
               type="text"
-              placeholder="Phone*"
+              placeholder={fields[3]}
               required="required"
             />
           </div>
@@ -47,7 +47,7 @@ export const ContactForm = () => {
         <div className="col-12">
           <div className="form-group">
             <textarea
-              placeholder="Message*"
+              placeholder={fields[4]}
               name="message"
               id="message-area"
               className="form-control"
@@ -58,7 +58,7 @@ export const ContactForm = () => {
         <div className="col-12">
           <div className="button">
             <button type="submit" className="btn ">
-              Send Message
+              {cta}
             </button>
           </div>
         </div>

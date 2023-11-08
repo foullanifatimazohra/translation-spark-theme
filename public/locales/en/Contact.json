@@ -1,0 +1,26 @@
+{
+  "title": "Contact Us",
+  "contact": {
+    "title": "Contact Us",
+    "paragraph": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+    "infos": [
+      {
+        "title": "Call us",
+        "content": ["+14-394-409-591"]
+      },
+      {
+        "title": "Email us",
+        "content": ["info@mail.com", "support@mail.com"]
+      },
+      {
+        "title": "Our Address",
+        "content": ["34 Madison Street,", "NY, USA 10005"]
+      }
+    ]
+  },
+  "form": {
+    "title": "Leave a message here",
+    "fields": ["Name*", "Email*", "Subject*", "Phone*", "Message*"],
+    "cta": "Send Message"
+  }
+}
