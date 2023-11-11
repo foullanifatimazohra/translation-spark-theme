@@ -98,5 +98,5 @@ html {
   display: none;
 }
 #tns1-iw {
-  direction: ltr;
+  direction: ltr !important;
 }
