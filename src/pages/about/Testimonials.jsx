@@ -36,7 +36,7 @@ export const Testimonials = () => {
             </div>
           </div>
         </div>
-        <TinySlider settings={settings} className="row testimonial-slider">
+        <TinySlider settings={settings} className="row testimonial-slider rtl">
           {t("testimonials.cards", { returnObjects: true }).map(
             (card, index) => {
               return <TestimonialCard key={index} {...card} />;

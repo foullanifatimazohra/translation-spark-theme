@@ -97,3 +97,6 @@ html {
 .tns-controls {
   display: none;
 }
+#tns1-iw {
+  direction: ltr;
+}
